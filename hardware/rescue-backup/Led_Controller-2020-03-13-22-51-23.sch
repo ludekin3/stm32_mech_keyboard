@@ -1,5 +1,40 @@
-EESchema Schematic File Version 4
-EELAYER 30 0
+EESchema Schematic File Version 2
+LIBS:TCKB-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:TCKB
+LIBS:issi
+LIBS:stm32
+LIBS:SparkFun-Connectors
+LIBS:TCKB-cache
+EELAYER 25 0
 EELAYER END
 $Descr User 17748 11827
 encoding utf-8
@@ -77,7 +112,7 @@ F19 "LED_LINE_0" I R 2900 4300 60
 F20 "LED_COL_0" I L 1600 4300 60 
 $EndSheet
 $Comp
-L TCKB-rescue:IS31FL3733 U5
+L IS31FL3733 U5
 U 1 1 58766295
 P 9100 4850
 F 0 "U5" H 9650 4600 60  0000 C CNN
@@ -88,7 +123,7 @@ F 3 "" H 9650 4600 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TCKB-rescue:GNDPWR #PWR023
+L GNDPWR #PWR023
 U 1 1 58767391
 P 10400 7450
 F 0 "#PWR023" H 10400 7250 50  0001 C CNN
@@ -99,7 +134,7 @@ F 3 "" H 10400 7400 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TCKB-rescue:GNDPWR #PWR024
+L GNDPWR #PWR024
 U 1 1 587676EA
 P 8000 7750
 F 0 "#PWR024" H 8000 7550 50  0001 C CNN
@@ -138,7 +173,7 @@ LED_COL_12
 Text GLabel 10450 4050 2    60   Input ~ 0
 LED_COL_13
 $Comp
-L Device:R R4
+L R R4
 U 1 1 5876C79C
 P 7850 6400
 F 0 "R4" V 7930 6400 50  0000 C CNN
@@ -149,7 +184,7 @@ F 3 "" H 7850 6400 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TCKB-rescue:GNDPWR #PWR025
+L GNDPWR #PWR025
 U 1 1 5876CA47
 P 7850 6600
 F 0 "#PWR025" H 7850 6400 50  0001 C CNN
@@ -160,7 +195,7 @@ F 3 "" H 7850 6550 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R7
+L R R7
 U 1 1 5876D6DE
 P 7700 6300
 F 0 "R7" V 7780 6300 50  0000 C CNN
@@ -171,7 +206,7 @@ F 3 "" H 7700 6300 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TCKB-rescue:GNDPWR #PWR026
+L GNDPWR #PWR026
 U 1 1 5876D8D2
 P 7700 6600
 F 0 "#PWR026" H 7700 6400 50  0001 C CNN
@@ -190,7 +225,7 @@ SCL
 Text GLabel 7500 5850 0    60   Input ~ 0
 SDA
 $Comp
-L Device:R R5
+L R R5
 U 1 1 5876E8A9
 P 7700 5600
 F 0 "R5" V 7780 5600 50  0000 C CNN
@@ -201,7 +236,7 @@ F 3 "" H 7700 5600 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R8
+L R R8
 U 1 1 5876E9D6
 P 7850 5600
 F 0 "R8" V 7930 5600 50  0000 C CNN
@@ -212,7 +247,7 @@ F 3 "" H 7850 5600 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R9
+L R R9
 U 1 1 5876EAFB
 P 8000 5600
 F 0 "R9" V 8080 5600 50  0000 C CNN
@@ -223,7 +258,7 @@ F 3 "" H 8000 5600 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3V3 #PWR027
+L +3V3 #PWR027
 U 1 1 5876FA9A
 P 7700 5250
 F 0 "#PWR027" H 7700 5100 50  0001 C CNN
@@ -244,7 +279,7 @@ LED_LINE_3
 Text GLabel 10450 6250 2    60   Input ~ 0
 LED_LINE_4
 $Comp
-L power:+5V #PWR028
+L +5V #PWR028
 U 1 1 58771EFA
 P 6900 3350
 F 0 "#PWR028" H 6900 3200 50  0001 C CNN
@@ -255,7 +290,7 @@ F 3 "" H 6900 3350 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C19
+L C C19
 U 1 1 58772590
 P 7150 3650
 F 0 "C19" H 7175 3750 50  0000 L CNN
@@ -266,7 +301,7 @@ F 3 "" H 7150 3650 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TCKB-rescue:GNDPWR #PWR029
+L GNDPWR #PWR029
 U 1 1 58772B4D
 P 6900 4400
 F 0 "#PWR029" H 6900 4200 50  0001 C CNN
@@ -277,7 +312,7 @@ F 3 "" H 6900 4350 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C20
+L C C20
 U 1 1 5877336F
 P 6900 3650
 F 0 "C20" H 6925 3750 50  0000 L CNN
@@ -430,7 +465,7 @@ Wire Wire Line
 	7400 3700 8250 3700
 Connection ~ 7150 3500
 $Comp
-L Device:C C22
+L C C22
 U 1 1 58773A8B
 P 7600 3850
 F 0 "C22" H 7625 3950 50  0000 L CNN
@@ -441,7 +476,7 @@ F 3 "" H 7600 3850 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C21
+L C C21
 U 1 1 58773BB0
 P 7400 3850
 F 0 "C21" H 7425 3950 50  0000 L CNN
@@ -465,7 +500,7 @@ Wire Wire Line
 Wire Wire Line
 	7850 3950 8250 3950
 $Comp
-L Device:C C24
+L C C24
 U 1 1 5877476E
 P 8000 4100
 F 0 "C24" H 8025 4200 50  0000 L CNN
@@ -477,7 +512,7 @@ F 3 "" H 8000 4100 50  0000 C CNN
 $EndComp
 Connection ~ 8000 3950
 $Comp
-L Device:C C23
+L C C23
 U 1 1 587749D5
 P 7850 4100
 F 0 "C23" H 7875 4200 50  0000 L CNN
@@ -494,7 +529,7 @@ Connection ~ 7850 4250
 Wire Wire Line
 	10150 3500 11400 3500
 $Comp
-L power:+3V3 #PWR030
+L +3V3 #PWR030
 U 1 1 5877522A
 P 11400 3400
 F 0 "#PWR030" H 11400 3250 50  0001 C CNN
@@ -505,7 +540,7 @@ F 3 "" H 11400 3400 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C25
+L C C25
 U 1 1 58775598
 P 11400 3700
 F 0 "C25" H 11425 3800 50  0000 L CNN
@@ -516,7 +551,7 @@ F 3 "" H 11400 3700 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TCKB-rescue:GNDPWR #PWR031
+L GNDPWR #PWR031
 U 1 1 58775700
 P 11400 3900
 F 0 "#PWR031" H 11400 3700 50  0001 C CNN
@@ -540,7 +575,7 @@ Connection ~ 11400 3500
 Wire Wire Line
 	11400 3850 11400 3900
 $Comp
-L power:+5V #PWR032
+L +5V #PWR032
 U 1 1 58770169
 P 5600 3000
 F 0 "#PWR032" H 5600 2850 50  0001 C CNN
@@ -553,7 +588,7 @@ $EndComp
 Wire Wire Line
 	5600 3000 5600 3100
 $Comp
-L Device:CP C7
+L CP C7
 U 1 1 58770347
 P 5600 3250
 F 0 "C7" H 5625 3350 50  0000 L CNN
@@ -566,7 +601,7 @@ $EndComp
 Wire Wire Line
 	5600 3400 5600 3500
 $Comp
-L TCKB-rescue:GNDPWR #PWR033
+L GNDPWR #PWR033
 U 1 1 5877051A
 P 5600 3500
 F 0 "#PWR033" H 5600 3300 50  0001 C CNN
@@ -581,7 +616,7 @@ Wire Wire Line
 Text Label 7950 6650 0    60   ~ 0
 RSET
 $Comp
-L Device:R R6
+L R R6
 U 1 1 587CD18E
 P 6550 7250
 F 0 "R6" V 6630 7250 50  0000 C CNN
@@ -598,7 +633,7 @@ Wire Wire Line
 Wire Wire Line
 	6550 7400 6550 7550
 $Comp
-L TCKB-rescue:GNDPWR #PWR034
+L GNDPWR #PWR034
 U 1 1 587CD422
 P 6550 7550
 F 0 "#PWR034" H 6550 7350 50  0001 C CNN

@@ -1,5 +1,40 @@
-EESchema Schematic File Version 4
-EELAYER 30 0
+EESchema Schematic File Version 2
+LIBS:TCKB-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:TCKB
+LIBS:issi
+LIBS:stm32
+LIBS:SparkFun-Connectors
+LIBS:TCKB-cache
+EELAYER 25 0
 EELAYER END
 $Descr User 17748 11039
 encoding utf-8
@@ -14,7 +49,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L power:+5V #PWR01
+L +5V #PWR01
 U 1 1 56425B76
 P 4850 7300
 F 0 "#PWR01" H 4850 7150 50  0001 C CNN
@@ -25,7 +60,7 @@ F 3 "" H 4850 7300 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TCKB-rescue:GNDPWR #PWR02
+L GNDPWR #PWR02
 U 1 1 56425B9E
 P 5300 7800
 F 0 "#PWR02" H 5300 7600 50  0001 C CNN
@@ -36,7 +71,7 @@ F 3 "" H 5300 7750 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TCKB-rescue:GNDPWR #PWR03
+L GNDPWR #PWR03
 U 1 1 56425FFD
 P 9400 6050
 F 0 "#PWR03" H 9400 5850 50  0001 C CNN
@@ -47,7 +82,7 @@ F 3 "" H 9400 6000 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP C2
+L CP C2
 U 1 1 56426378
 P 3350 9600
 F 0 "C2" H 3375 9700 50  0000 L CNN
@@ -58,7 +93,7 @@ F 3 "" H 3350 9600 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3V3 #PWR04
+L +3V3 #PWR04
 U 1 1 564263A2
 P 3150 9350
 F 0 "#PWR04" H 3150 9200 50  0001 C CNN
@@ -69,7 +104,7 @@ F 3 "" H 3150 9350 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TCKB-rescue:GNDPWR #PWR05
+L GNDPWR #PWR05
 U 1 1 564263C6
 P 3150 9850
 F 0 "#PWR05" H 3150 9650 50  0001 C CNN
@@ -80,7 +115,7 @@ F 3 "" H 3150 9800 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TCKB-rescue:GNDPWR #PWR06
+L GNDPWR #PWR06
 U 1 1 56427188
 P 10950 8500
 F 0 "#PWR06" H 10950 8300 50  0001 C CNN
@@ -91,7 +126,7 @@ F 3 "" H 10950 8450 60  0000 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L power:+3V3 #PWR07
+L +3V3 #PWR07
 U 1 1 564271BD
 P 10350 8000
 F 0 "#PWR07" H 10350 7850 50  0001 C CNN
@@ -118,7 +153,7 @@ NRST
 Text GLabel 5700 4300 0    60   Input ~ 0
 Col_3_
 $Comp
-L Device:R R1
+L R R1
 U 1 1 56429B59
 P 2550 1300
 F 0 "R1" V 2630 1300 50  0000 C CNN
@@ -129,7 +164,7 @@ F 3 "" H 2550 1300 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TCKB-rescue:GNDPWR #PWR08
+L GNDPWR #PWR08
 U 1 1 56429E90
 P 2550 1500
 F 0 "#PWR08" H 2550 1300 50  0001 C CNN
@@ -140,7 +175,7 @@ F 3 "" H 2550 1450 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3V3 #PWR09
+L +3V3 #PWR09
 U 1 1 56429EF1
 P 9400 2150
 F 0 "#PWR09" H 9400 2000 50  0001 C CNN
@@ -151,7 +186,7 @@ F 3 "" H 9400 2150 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TCKB-rescue:GNDPWR #PWR010
+L GNDPWR #PWR010
 U 1 1 56429EF8
 P 9950 8850
 F 0 "#PWR010" H 9950 8650 50  0001 C CNN
@@ -200,7 +235,7 @@ SWD
 Text Notes 3550 10050 0    60   ~ 0
 STM32 Coupling
 $Comp
-L Device:CP C3
+L CP C3
 U 1 1 56477E1E
 P 3650 9600
 F 0 "C3" H 3675 9700 50  0000 L CNN
@@ -211,7 +246,7 @@ F 3 "" H 3650 9600 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP C5
+L CP C5
 U 1 1 56477E8E
 P 4250 9600
 F 0 "C5" H 4275 9700 50  0000 L CNN
@@ -222,7 +257,7 @@ F 3 "" H 4250 9600 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP C1
+L CP C1
 U 1 1 56477E94
 P 9950 8650
 F 0 "C1" H 9975 8750 50  0000 L CNN
@@ -233,7 +268,7 @@ F 3 "" H 9950 8650 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP C4
+L CP C4
 U 1 1 56477F0C
 P 3950 9600
 F 0 "C4" H 3975 9700 50  0000 L CNN
@@ -254,7 +289,7 @@ USART_RX
 Text GLabel 12650 4900 2    60   Output ~ 0
 USART_TX
 $Comp
-L Device:R R2
+L R R2
 U 1 1 564A2941
 P 13500 5100
 F 0 "R2" V 13580 5100 50  0000 C CNN
@@ -265,7 +300,7 @@ F 3 "" H 13500 5100 30  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R R3
+L R R3
 U 1 1 564A316D
 P 13500 5200
 F 0 "R3" V 13400 5200 50  0000 C CNN
@@ -286,7 +321,7 @@ BOOT0
 Text GLabel 2650 1100 2    60   Input ~ 0
 BOOT0
 $Comp
-L TCKB:STRIP_8P DBG1
+L STRIP_8P DBG1
 U 1 1 57F7F91D
 P 11050 8000
 F 0 "DBG1" V 11350 7550 50  0000 L CNN
@@ -362,7 +397,7 @@ Col_10_
 Text GLabel 5700 5500 0    60   Input ~ 0
 Col_13_
 $Comp
-L TCKB-rescue:MCP1700T-3002E_TT U3
+L MCP1700T-3002E/TT U3
 U 1 1 5876206E
 P 3700 8450
 F 0 "U3" H 3800 8250 50  0000 C CNN
@@ -373,7 +408,7 @@ F 3 "" H 3700 8550 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3V3 #PWR011
+L +3V3 #PWR011
 U 1 1 58762522
 P 4250 8300
 F 0 "#PWR011" H 4250 8150 50  0001 C CNN
@@ -384,7 +419,7 @@ F 3 "" H 4250 8300 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR012
+L +5V #PWR012
 U 1 1 58762620
 P 3150 8300
 F 0 "#PWR012" H 3150 8150 50  0001 C CNN
@@ -395,7 +430,7 @@ F 3 "" H 3150 8300 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TCKB-rescue:GNDPWR #PWR013
+L GNDPWR #PWR013
 U 1 1 58762A25
 P 3700 8800
 F 0 "#PWR013" H 3700 8600 50  0001 C CNN
@@ -406,7 +441,7 @@ F 3 "" H 3700 8750 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C10
+L C C10
 U 1 1 58762F4E
 P 4250 8550
 F 0 "C10" H 4275 8650 50  0000 L CNN
@@ -417,7 +452,7 @@ F 3 "" H 4250 8550 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TCKB-rescue:GNDPWR #PWR014
+L GNDPWR #PWR014
 U 1 1 58763141
 P 4250 8800
 F 0 "#PWR014" H 4250 8600 50  0001 C CNN
@@ -428,7 +463,7 @@ F 3 "" H 4250 8750 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C6
+L C C6
 U 1 1 587638F1
 P 3150 8600
 F 0 "C6" H 3175 8700 50  0000 L CNN
@@ -439,7 +474,7 @@ F 3 "" H 3150 8600 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TCKB-rescue:GNDPWR #PWR015
+L GNDPWR #PWR015
 U 1 1 58763CC5
 P 3150 8800
 F 0 "#PWR015" H 3150 8600 50  0001 C CNN
@@ -450,7 +485,7 @@ F 3 "" H 3150 8750 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TCKB-rescue:CONN_01X04 P2
+L CONN_01X04 P2
 U 1 1 58773496
 P 6650 8900
 F 0 "P2" H 6650 9150 50  0000 C CNN
@@ -465,7 +500,7 @@ USB_P
 Text Label 6150 8850 0    60   ~ 0
 USB_M
 $Comp
-L power:+5V #PWR016
+L +5V #PWR016
 U 1 1 58773BDB
 P 6300 8650
 F 0 "#PWR016" H 6300 8500 50  0001 C CNN
@@ -476,7 +511,7 @@ F 3 "" H 6300 8650 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TCKB-rescue:GNDPWR #PWR017
+L GNDPWR #PWR017
 U 1 1 58773C85
 P 6300 9150
 F 0 "#PWR017" H 6300 8950 50  0001 C CNN
@@ -487,7 +522,7 @@ F 3 "" H 6300 9100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TCKB-rescue:CONN_01X06 EXT1
+L CONN_01X06 EXT1
 U 1 1 5877CC91
 P 8650 8350
 F 0 "EXT1" H 8650 8700 50  0000 C CNN
@@ -498,7 +533,7 @@ F 3 "" H 8650 8350 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TCKB-rescue:GNDPWR #PWR018
+L GNDPWR #PWR018
 U 1 1 5877D335
 P 8200 8750
 F 0 "#PWR018" H 8200 8550 50  0001 C CNN
@@ -521,7 +556,7 @@ Line_4_
 Text GLabel 12550 4500 2    60   Input ~ 0
 LED_SHTDN
 $Comp
-L power:+3V3 #PWR019
+L +3V3 #PWR019
 U 1 1 5877FA90
 P 8200 7950
 F 0 "#PWR019" H 8200 7800 50  0001 C CNN
@@ -532,7 +567,7 @@ F 3 "" H 8200 7950 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3V3 #PWR020
+L +3V3 #PWR020
 U 1 1 58794DD7
 P 5100 2900
 F 0 "#PWR020" H 5100 2750 50  0001 C CNN
@@ -563,7 +598,7 @@ USB_M
 Text GLabel 13800 5200 2    60   Input ~ 0
 USB_P
 $Comp
-L TCKB-rescue:STM32F042C6Tx U1
+L STM32F042C6Tx U1
 U 1 1 587E33CB
 P 9300 4100
 F 0 "U1" H 6300 5825 50  0000 L BNN
@@ -580,7 +615,7 @@ OSC_IN
 Text GLabel 5700 3300 0    60   Input ~ 0
 OSC_OUT
 $Comp
-L Device:Crystal Y1
+L Crystal Y1
 U 1 1 587F4323
 P 4350 1350
 F 0 "Y1" H 4350 1500 50  0000 C CNN
@@ -595,7 +630,7 @@ OSC_IN
 Text GLabel 5000 1350 2    60   Input ~ 0
 OSC_OUT
 $Comp
-L Device:C C8
+L C C8
 U 1 1 587F4FA6
 P 4000 1800
 F 0 "C8" H 4025 1900 50  0000 L CNN
@@ -606,7 +641,7 @@ F 3 "" H 4000 1800 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C9
+L C C9
 U 1 1 587F5630
 P 4800 1800
 F 0 "C9" H 4825 1900 50  0000 L CNN
@@ -617,7 +652,7 @@ F 3 "" H 4800 1800 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TCKB-rescue:GNDPWR #PWR021
+L GNDPWR #PWR021
 U 1 1 587F5920
 P 4000 2050
 F 0 "#PWR021" H 4000 1850 50  0001 C CNN
@@ -628,7 +663,7 @@ F 3 "" H 4000 2000 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TCKB-rescue:GNDPWR #PWR022
+L GNDPWR #PWR022
 U 1 1 587F5A22
 P 4800 2050
 F 0 "#PWR022" H 4800 1850 50  0001 C CNN
@@ -639,7 +674,7 @@ F 3 "" H 4800 2000 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C11
+L C C11
 U 1 1 58818CA3
 P 4600 9600
 F 0 "C11" H 4625 9700 50  0000 L CNN
@@ -650,7 +685,7 @@ F 3 "" H 4600 9600 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TCKB:USB-MB-H J1
+L USB-MB-H J1
 U 1 1 58845C9B
 P 5650 7600
 F 0 "J1" H 5650 7975 50  0000 L BNN
@@ -667,7 +702,7 @@ Wire Wire Line
 Wire Wire Line
 	9100 5900 9100 5950
 Wire Wire Line
-	9100 5950 9200 5950
+	9100 5950 9400 5950
 Wire Wire Line
 	9200 5900 9200 5950
 Connection ~ 9200 5950
@@ -724,9 +759,9 @@ Wire Wire Line
 Wire Wire Line
 	9100 2300 9100 2250
 Wire Wire Line
-	9100 2250 9200 2250
+	9100 2250 9400 2250
 Wire Wire Line
-	9400 2150 9400 2250
+	9400 2150 9400 2300
 Connection ~ 9400 2250
 Wire Wire Line
 	9300 2250 9300 2300
@@ -743,11 +778,11 @@ Wire Wire Line
 Wire Wire Line
 	12400 5200 13350 5200
 Wire Wire Line
-	3150 9400 3350 9400
+	3150 9400 4600 9400
 Wire Wire Line
 	4250 9400 4250 9450
 Wire Wire Line
-	3150 9800 3350 9800
+	3150 9800 4600 9800
 Wire Wire Line
 	4250 9800 4250 9750
 Wire Wire Line
@@ -777,9 +812,10 @@ Wire Wire Line
 Wire Wire Line
 	5400 3400 6200 3400
 Wire Wire Line
-	9650 8400 9950 8400
+	9650 8400 11050 8400
 Wire Wire Line
 	2550 1150 2550 1100
+Connection ~ 2550 1100
 Wire Wire Line
 	10800 8600 11050 8600
 Wire Wire Line
@@ -804,7 +840,7 @@ Wire Wire Line
 Wire Wire Line
 	11050 8500 10950 8500
 Wire Wire Line
-	9400 5900 9400 5950
+	9400 5900 9400 6050
 Connection ~ 9400 5950
 Wire Wire Line
 	6200 4000 5700 4000
@@ -853,9 +889,9 @@ Wire Wire Line
 Wire Wire Line
 	3400 8350 3150 8350
 Wire Wire Line
-	4250 8300 4250 8350
+	4250 8300 4250 8400
 Wire Wire Line
-	3150 8300 3150 8350
+	3150 8300 3150 8450
 Connection ~ 4250 8350
 Connection ~ 3150 8350
 Wire Wire Line
@@ -914,9 +950,9 @@ Wire Wire Line
 Wire Wire Line
 	6200 3200 5700 3200
 Wire Wire Line
-	4500 1350 4800 1350
+	4500 1350 5000 1350
 Wire Wire Line
-	3800 1350 4000 1350
+	3800 1350 4200 1350
 Wire Wire Line
 	4000 1350 4000 1650
 Connection ~ 4000 1350
@@ -943,42 +979,4 @@ Wire Wire Line
 	5300 7600 5300 7800
 Wire Wire Line
 	4850 7500 4850 7300
-Wire Wire Line
-	9200 5950 9300 5950
-Wire Wire Line
-	9400 2250 9400 2300
-Wire Wire Line
-	9300 2250 9400 2250
-Wire Wire Line
-	9200 2250 9300 2250
-Wire Wire Line
-	3950 9800 4250 9800
-Wire Wire Line
-	3650 9800 3950 9800
-Wire Wire Line
-	3350 9800 3650 9800
-Wire Wire Line
-	3350 9400 3650 9400
-Wire Wire Line
-	3650 9400 3950 9400
-Wire Wire Line
-	3950 9400 4250 9400
-Wire Wire Line
-	9950 8400 11050 8400
-Wire Wire Line
-	9400 5950 9400 6050
-Wire Wire Line
-	4250 8350 4250 8400
-Wire Wire Line
-	3150 8350 3150 8450
-Wire Wire Line
-	9300 5950 9400 5950
-Wire Wire Line
-	4000 1350 4200 1350
-Wire Wire Line
-	4800 1350 5000 1350
-Wire Wire Line
-	4250 9400 4600 9400
-Wire Wire Line
-	4250 9800 4600 9800
 $EndSCHEMATC
